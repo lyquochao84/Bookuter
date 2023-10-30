@@ -1,0 +1,14 @@
+/* Large Device */
+@media (min-width: 64em) {
+    .wrap {
+        padding-left: 75px;
+        padding-right: 75px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+}

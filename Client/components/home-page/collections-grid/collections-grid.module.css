@@ -1,0 +1,57 @@
+/* Large devices */
+@media (min-width: 100em) {
+    .collections_grid {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    .collections_grid_item_link {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .collections_grid_item_image {
+        border-radius: 10px;
+        transition: transform 0.25s;
+    }
+
+    .collections_grid_item_image:hover {
+        transform: scale(1.1);
+    }
+
+    .collections_grid_item_title {
+        font-weight: 500;
+    }
+}
+
+/* Laptop */
+@media (min-width: 64em) and (max-width: 100em) {
+    .collections_grid {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    .collections_grid_item_link {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .collections_grid_item_image {
+        border-radius: 10px;
+        transition: transform 0.25s;
+        width: 200px;
+        height: 200px;
+    }
+
+    .collections_grid_item_image:hover {
+        transform: scale(1.1);
+    }
+
+    .collections_grid_item_title {
+        font-weight: 500;
+    }
+}

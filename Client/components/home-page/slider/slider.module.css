@@ -1,0 +1,50 @@
+/* Large Devices */
+@media (min-width: 64em) {
+  .slider_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .image_text {
+    font-size: 70px;
+    font-weight: 500;
+    color: #fffdf5;
+    letter-spacing: 3px;
+    margin-bottom: 150px;
+    font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .slider_contact_link {
+    overflow: hidden;
+    display: block;
+    width: 230px;
+    padding: 17px 33px 15px;
+    font-size: 18px;
+    line-height: 1.34;
+    border: 2px solid var(--theme-color);
+    font-family: "Teko", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--theme-color);
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider_contact_link:hover {
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+    transition: 250ms all ease-in-out;
+  }
+
+  .slider_contact_link > span {
+    color: white;
+  }
+}

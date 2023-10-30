@@ -1,0 +1,240 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .navigation {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .image_wrapper {
+        padding-top: 20px;
+        width: 18%;
+        position: relative;
+        object-fit: contain;
+    }
+
+    .search_bar {
+        width: 40%;
+        height: 100%;
+        padding: 20px 24px;
+        margin-top: 35px;
+        margin-left: 90px;
+
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        
+        color: #575756;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+
+    .search_bar::placeholder {
+        color: color(#575756 a(0.8));
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    .search_bar:hover, .search_bar:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+    }
+
+    .navigation_items {
+        display: flex;
+        list-style: none;
+        padding-top: 38px;
+    }
+    
+    .navigation_item { 
+        padding-left: 35px;
+    }
+
+    .navigation_item_categories {
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .navigation_item_categories:hover 
+    .navigation_item_categories_list {
+        display: block;
+    }
+
+    .navigation_item_link {
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .navigation_item_link:hover {
+        opacity: 0.3;
+    }
+
+    .navigation_item_categories_list {
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 10px;
+        animation: fadeIn ease-in 0.5s;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        padding: 0px;
+        border: #dcdcc6 solid 3px;
+        display: none;
+    }
+
+    .navigation_item_categories_item {
+        border-bottom: beige solid 1.5px;
+    }
+
+    .navigation_item_categories_item > a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15px 60px;
+    }
+
+    .navigation_item_categories_item > a:hover {
+        background-color: beige;
+        animation: fadeIn ease-in 0.3s;
+    }
+}
+
+/* Laptop */
+@media (min-width: 64em) and (max-width: 100em) {
+    .navigation {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 50px;  
+    }
+
+    .image_wrapper {
+        padding-top: 20px;
+        width: 18%;
+        position: relative;
+        object-fit: contain;
+    }
+
+    .search_bar {
+        width: 34%;
+        height: 100%;
+        padding: 20px 24px;
+        margin-top: 35px;
+        margin-left: 120px;
+
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        
+        color: #575756;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+
+    .search_bar::placeholder {
+        color: color(#575756 a(0.8));
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    .search_bar:hover, .search_bar:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+    }
+
+    .navigation_items {
+        display: flex;
+        list-style: none;
+        padding-top: 38px;
+        padding-left: 0px;
+    }
+    
+    .navigation_item { 
+        padding-left: 25px;
+    }
+
+    .navigation_item_link {
+        font-size: 16px;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .navigation_item_link:hover {
+        opacity: 0.3;
+    }
+
+    .navigation_item_categories_list {
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 10px;
+        animation: fadeIn ease-in 0.5s;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        padding: 0px;
+        border: #dcdcc6 solid 3px;
+        display: none;
+    }
+
+    .navigation_item_categories_item {
+        border-bottom: beige solid 1.5px;
+    }
+
+    .navigation_item_categories_item > a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15px 60px;
+    }
+
+    .navigation_item_categories_item > a:hover {
+        background-color: beige;
+        animation: fadeIn ease-in 0.3s;
+    }
+
+    .navigation_item_categories {
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .navigation_item_categories:hover 
+    .navigation_item_categories_list {
+        display: block;
+    }
+}

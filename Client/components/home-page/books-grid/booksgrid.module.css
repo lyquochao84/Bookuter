@@ -1,0 +1,23 @@
+/* Large devices */
+@media (min-width: 100em) {
+    .books_grid {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0;
+        justify-content: space-around;
+    }
+}
+
+/* Laptop */
+@media (min-width: 64em) and (max-width: 100em) {
+    .books_grid {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0;
+        justify-content: space-around;
+    }
+}

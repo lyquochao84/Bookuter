@@ -1,0 +1,47 @@
+/* Large devices */
+@media (min-width: 100em) {
+  .books_item {
+    width: 300px;
+  }
+
+  .books_item > a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .books_item_information_title {
+    font-weight: 500;
+  }
+
+  .books_item_image_wrap {
+    transition: transform 0.25s;
+  }
+
+  .books_item_image_wrap:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Laptop  */
+@media (min-width: 64em) and (max-width: 100em) {
+  .books_item {
+    width: 200px;
+  }
+
+  .books_item > a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .books_item_information_title {
+    font-weight: 500;
+  }
+
+  .books_item_image_wrap {
+    transition: transform 0.25s;
+  }
+
+  .books_item_image_wrap:hover {
+    transform: scale(1.1);
+  }
+}
