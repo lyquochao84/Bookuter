@@ -16,7 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use("/", require("./routes"));
 
-
 // Hosted Server Port
 app.listen(PORT, () => {
   console.log(`Server start on ${PORT}`);
