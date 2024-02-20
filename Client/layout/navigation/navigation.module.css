@@ -1,0 +1,296 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .navigation {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .image_wrapper {
+        padding-top: 20px;
+        width: 18%;
+        position: relative;
+        object-fit: contain;
+    }
+
+    .navigation_items {
+        display: flex;
+        list-style: none;
+        padding-top: 38px;
+    }
+    
+    .navigation_item { 
+        padding-left: 35px;
+    }
+
+    .navigation_item_categories {
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .navigation_item_categories:hover 
+    .navigation_item_categories_list {
+        display: block;
+        height: 500%;
+        overflow-y: auto;
+    }
+
+    .navigation_item_link {
+        font-size: 18px;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .navigation_item_link:hover {
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .navigation_item_categories_list {
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 10px;
+        animation: fadeIn ease-in 0.5s;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        padding: 0px;
+        border: #dcdcc6 solid 3px;
+        display: none;
+    }
+
+    .navigation_item_categories_item {
+        border-bottom: beige solid 1.5px;
+    }
+
+    .navigation_item_categories_item > a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15px 60px;
+    }
+
+    .navigation_item_categories_item > a:hover {
+        background-color: beige;
+        animation: fadeIn ease-in 0.3s;
+    }
+
+    .navigation_item_user {
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .user_options_list {
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 10px;
+        animation: fadeIn ease-in 0.5s;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        padding: 0px;
+        width: 150%;
+        border: #dcdcc6 solid 3px;
+        display: none;
+    }
+
+    .navigation_item_user:hover 
+    .user_options_list {
+        display: block;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .user_options {
+        border-bottom: beige solid 1.5px;
+        width: 100%;
+    }
+
+    .user_options > a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .user_options > a:hover {
+        background-color: beige;
+        animation: fadeIn ease-in 0.3s;
+        cursor: pointer;
+    }
+
+    .user_options > span {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .user_options > span:hover {
+        background-color: beige;
+        animation: fadeIn ease-in 0.3s;
+        cursor: pointer;
+    }
+}
+
+/* Laptop */
+@media (min-width: 64em) and (max-width: 100em) {
+    .navigation {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 50px;  
+    }
+
+    .image_wrapper {
+        padding-top: 20px;
+        width: 18%;
+        position: relative;
+        object-fit: contain;
+    }
+
+    .navigation_items {
+        display: flex;
+        list-style: none;
+        padding-top: 38px;
+        padding-left: 0px;
+    }
+    
+    .navigation_item { 
+        padding-left: 25px;
+    }
+
+    .navigation_item_link {
+        font-size: 14.5px;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .navigation_item_link:hover {
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .navigation_item_categories_list {
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 10px;
+        animation: fadeIn ease-in 0.5s;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        padding: 0px;
+        border: #dcdcc6 solid 3px;
+        display: none;
+    }
+
+    .navigation_item_categories_item {
+        border-bottom: beige solid 1.5px;
+    }
+
+    .navigation_item_categories_item > a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15px 60px;
+    }
+
+    .navigation_item_categories_item > a:hover {
+        background-color: beige;
+        animation: fadeIn ease-in 0.3s;
+    }
+
+    .navigation_item_categories {
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .navigation_item_categories:hover 
+    .navigation_item_categories_list {
+        display: block;
+        height: 500%;
+        overflow-y: auto;
+    }
+
+    .navigation_item_user {
+        padding-left: 24px;
+        position: relative;
+    }
+
+    .user_options_list {
+        background-color: #fff;
+        border-radius: 6px;
+        margin-top: 10px;
+        animation: fadeIn ease-in 0.5s;
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        padding: 0px;
+        width: 150%;
+        border: #dcdcc6 solid 3px;
+        display: none;
+    }
+
+    .navigation_item_user:hover 
+    .user_options_list {
+        display: block;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .user_options {
+        border-bottom: beige solid 1.5px;
+        width: 100%;
+    }
+
+    .user_options > a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 13px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .user_options > a:hover {
+        background-color: beige;
+        animation: fadeIn ease-in 0.3s;
+        cursor: pointer;
+    }
+
+    .user_options > span {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 13px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .user_options > span:hover {
+        background-color: beige;
+        animation: fadeIn ease-in 0.3s;
+        cursor: pointer;
+    }
+}

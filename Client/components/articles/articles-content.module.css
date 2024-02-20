@@ -1,0 +1,39 @@
+/* Large Devices */
+@media (min-width: 100em) {
+  .article_content {
+    margin-top: 50px;
+  }
+
+  .article_content_title {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .article_content_description {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 64em) and (max-width: 100em) {
+  .article_content {
+    margin-top: 50px;
+  }
+
+  .article_content_title {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .article_content_description {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

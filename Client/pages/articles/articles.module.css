@@ -1,0 +1,13 @@
+/* Large Devices */
+@media (min-width: 100em) {
+  .article_detail {
+    margin: 60px 0;
+  }
+}
+
+/* Laptop */
+@media (min-width: 64em) and (max-width: 100em) {
+  .article_detail {
+    margin: 60px 0;
+  }
+}

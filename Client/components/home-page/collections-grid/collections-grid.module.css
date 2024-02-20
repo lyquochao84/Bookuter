@@ -1,10 +1,12 @@
 /* Large devices */
 @media (min-width: 100em) {
     .collections_grid {
-        display: flex;
+        display: grid;
         list-style: none;
         justify-content: space-between;
         padding-left: 0;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 16px;
     }
 
     .collections_grid_item_link {
@@ -29,12 +31,14 @@
 /* Laptop */
 @media (min-width: 64em) and (max-width: 100em) {
     .collections_grid {
-        display: flex;
+        display: grid;
         list-style: none;
         justify-content: space-between;
         padding-left: 0;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 16px;
     }
-
+  
     .collections_grid_item_link {
         text-decoration: none;
         color: var(--text-color);

@@ -3,11 +3,15 @@ import Image from "next/image";
 import styles from "./collections-grid.module.css";
 
 const collections = [
-  { id: "1", title: "Fiction" },
-  { id: "2", title: "Non-Fiction" },
-  { id: "3", title: "Science" },
-  { id: "4", title: "History" },
-  { id: "4", title: "Horror" },
+  { id: 1, title: 'Fiction'},
+  { id: 2, title: 'Non-Fiction'},
+  { id: 3, title: 'Science'},
+  { id: 4, title: 'History'},
+  { id: 5, title: 'Horror'},
+  { id: 6, title: 'Business'},
+  { id: 7, title: 'Literature'},
+  { id: 8, title: 'Mystery'},
+  { id: 9, title: 'Romance'},
 ];
 
 function CollectionGrid() {
@@ -20,6 +24,7 @@ function CollectionGrid() {
             className={styles.collections_grid_item_link}
           >
             <Image
+              alt={type.title}
               src={`/img/collection-list/${type.title}/${type.title}.jpg`}
               width={300}
               height={300}

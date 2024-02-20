@@ -1,0 +1,210 @@
+/* Large Devices */
+@media (min-width: 100em) {
+  .sign_in_form {
+    height: 520px;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 53%;
+    left: 48%;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px;
+    padding: 50px 35px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+  }
+
+  .sign_in_title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .sign_in_username {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .username_input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .sign_in_password {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .password_input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .sign_in_btn {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sign_in_btn:hover {
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+    transition: 250ms all ease-in-out;
+    color: white;
+  }
+
+  .username_input::placeholder,
+  .password_input::placeholder {
+    color: black;
+  }
+
+  .register_link {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .register_text {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .register_text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+/* Laptop */
+@media (min-width: 64em) and (max-width: 100em) {
+  .sign_in_form {
+    height: 520px;
+    width: 400px;
+    position: relative;
+    margin: 50px 0;
+    left: 32.6%;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 5px;
+    padding: 50px 35px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+  }
+
+  .sign_in_title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .sign_in_username {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .username_input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .sign_in_password {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .password_input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .sign_in_btn {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sign_in_btn:hover {
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+    transition: 250ms all ease-in-out;
+    color: white;
+  }
+
+  .username_input::placeholder,
+  .password_input::placeholder {
+    color: black;
+  }
+
+  .register_link {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .register_text {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .register_text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

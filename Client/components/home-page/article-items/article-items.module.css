@@ -1,0 +1,70 @@
+/* Large devices */
+@media (min-width: 100em) {
+    .post_item {
+        width: 400px;
+    }
+
+    .post_link {
+        text-decoration: none;
+    }
+
+    .post_image_wrap {
+        transition: 1s ease;
+    }   
+
+    .post_image_wrap > img:hover {
+        border-radius:50%;
+        transition: 1s ease;    
+    }   
+
+    .post_article_name {
+        color: var(--text-color);
+        font-family: Cardamon, serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .post_short_description {
+        color: var(--text-color);
+        font-family: Cardamon, serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 100;
+        opacity: 0.8;
+        text-align: justify;
+    }
+}
+
+/* Laptop */
+@media (min-width: 64em) and (max-width: 100em) {
+    .post_link {
+        text-decoration: none;
+    }
+
+    .post_image_wrap {
+        transition: 1s ease;
+    }   
+
+    .post_image_wrap > img:hover {
+        border-radius:50%;
+        transition: 1s ease;    
+    }   
+
+    .post_article_name {
+        color: var(--text-color);
+        font-family: Cardamon, serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .post_short_description {
+        color: var(--text-color);
+        font-family: Cardamon, serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 100;
+        opacity: 0.8;
+    }
+}

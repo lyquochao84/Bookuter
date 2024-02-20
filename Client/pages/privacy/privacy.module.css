@@ -1,0 +1,46 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .privacy_wrap {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .privacy_title {
+        font-size: 36px;
+        padding-bottom: 10px;
+    }
+
+    .privacy_information {
+        line-height: 40px;
+        color: var(--text-color);
+    }
+
+    .privacy_item {
+        text-align: justify;
+    }
+}
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+    .privacy_wrap {
+        margin: 100px 0;
+        text-align: center;
+    }
+
+    .privacy_title {
+        font-size: 36px;
+    }
+
+    .privacy_information {
+        line-height: 40px;
+        color: var(--text-color);
+    }
+
+    .privacy_item {
+        text-align: justify;
+    }
+}

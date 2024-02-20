@@ -1,0 +1,47 @@
+/* Large Screen */
+@media (min-width: 100em) {
+  .favorite_list_item {
+    width: 300px;
+  }
+
+  .favorite_list_item > a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .favorite_list_image_wrap {
+    transition: transform 0.25s;
+  }
+
+  .favorite_list_information_title {
+    font-weight: 500;
+  }
+
+  .favorite_list_image_wrap:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+  .favorite_list_item {
+    width: 200px;
+  }
+
+  .favorite_list_item > a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .favorite_list_image_wrap {
+    transition: transform 0.25s;
+  }
+
+  .favorite_list_information_title {
+    font-weight: 500;
+  }
+
+  .favorite_list_image_wrap:hover {
+    transform: scale(1.1);
+  }
+}

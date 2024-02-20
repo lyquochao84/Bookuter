@@ -1,0 +1,30 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .book_detail_wrap {
+        display: flex;
+        padding: 44px 120px 0;
+    }
+
+    .book_detail_image {
+        width: 396px;
+        height: 578px;
+        margin-right: 120px;
+        object-fit: cover;
+    }
+} 
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+    .book_detail_wrap {
+        display: flex;
+        padding-top: 44px;
+        margin-bottom: 60px;
+    }
+
+    .book_detail_image {
+        width: 396px;
+        height: 578px;
+        margin-right: 120px;
+        object-fit: cover;
+    }
+}

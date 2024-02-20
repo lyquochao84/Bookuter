@@ -1,0 +1,43 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .buy_now_btn_wrap {
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+
+    .buy_now_btn {
+        padding: 12px 110px;
+        border-radius: 6px;
+        background-color: transparent;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .buy_now_btn:hover {
+        cursor: pointer;
+        box-shadow: 10px 5px 5px black;
+    }
+}
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+    .buy_now_btn_wrap {
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+
+    .buy_now_btn {
+        padding: 12px 110px;
+        border-radius: 6px;
+        background-color: transparent;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .buy_now_btn:hover {
+        cursor: pointer;
+        box-shadow: 10px 5px 5px black;
+    }
+}

@@ -1,8 +1,13 @@
 /* Large device */
 @media (min-width: 64em) {
+    .slider_wrap {
+        width: 100%;
+        height: 100vh;
+    }
+    
     .featured_books_wrap {
-        margin-top: 100px;
         text-align: center;
+        margin-bottom: 100px;
     }
     
     .featured_books_title {
@@ -48,14 +53,9 @@
     .featured_books_tabBtn:hover {
         cursor: pointer;
         color: white;
-        background-color: var(--theme-color);
-        border-color: var(--theme-color);
+        background-color: var(--button-hover-color);
+        border-color: var(--button-hover-color);
         transition: 250ms all ease-in-out;
-    }
-
-    .fiction_books_homepage_wrap {
-        text-align: center;
-        margin-top: 50px;
     }
 
     .featured_books_slide {
@@ -85,7 +85,4 @@
         opacity: 0.2;
     }
 
-    .fiction_books_homepage_wrap {
-        margin-top: 70px;
-    }
 }

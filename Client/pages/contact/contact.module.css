@@ -1,0 +1,37 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .contact_wrap {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .contact_title {
+        font-size: 36px;
+    }
+
+    .contact_information {
+        line-height: 30px;
+        color: var(--text-color);
+    }
+}
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+    .contact_wrap {
+        margin: 100px 0;
+        text-align: center;
+    }
+
+    .contact_title {
+        font-size: 36px;
+    }
+
+    .contact_information {
+        line-height: 30px;
+        color: var(--text-color);
+    }
+}

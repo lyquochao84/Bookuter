@@ -1,0 +1,41 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .add_cart_btn_wrap {
+        margin-top: 50px;
+    }
+
+    .add_cart_btn {
+        padding: 12px 90px;
+        border-radius: 6px;
+        background-color: transparent;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .add_cart_btn:hover {
+        cursor: pointer;
+        box-shadow: 10px 5px 5px black;
+    }
+}
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+    .add_cart_btn_wrap {
+        margin-top: 50px;
+    }
+
+    .add_cart_btn {
+        padding: 12px 90px;
+        border-radius: 6px;
+        background-color: transparent;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .add_cart_btn:hover {
+        cursor: pointer;
+        box-shadow: 10px 5px 5px black;
+    }
+}

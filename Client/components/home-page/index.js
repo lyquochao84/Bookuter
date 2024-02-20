@@ -4,17 +4,24 @@ import styles from "./content.module.css";
 import BooksGrid from "./books-grid";
 import { TfiArrowCircleLeft, TfiArrowCircleRight } from "react-icons/tfi";
 import CollectionGrid from "./collections-grid";
+import ArticlePost from "./article-post";
 
 const tabs = [
-  { id: "1", title: "All" },
-  { id: "2", title: "Fiction" },
-  { id: "3", title: "Non-Fiction" },
-  { id: "4", title: "Science" },
-  { id: "5", title: "History" },
-  { id: "6", title: "Horror" },
+  { id: 0, title: 'All' },
+  { id: 1, title: 'Fiction'},
+  { id: 2, title: 'Non-Fiction'},
+  { id: 3, title: 'Science'},
+  { id: 4, title: 'History'},
+  { id: 5, title: 'Horror'},
+  { id: 6, title: 'Business'},
+  { id: 7, title: 'Literature'},
+  { id: 8, title: 'Mystery'},
+  { id: 9, title: 'Romance'},
 ];
 
-function HomePageContent(props) {
+function HomePageContent(props) {  
+  const { articles } = props;
+
   const [clicked, setClicked] = useState();
   const [selectedGenre, setSelectedGenre] = useState("All");
   const [startIndex, setStartIndex] = useState(0);
@@ -49,18 +56,20 @@ function HomePageContent(props) {
   }
 
   return (
-    <>
-      <Slider />
+   <>
+      <div className={styles.slider_wrap}>
+        <Slider />
+      </div>
       <div className={styles.featured_books_wrap}>
         <h2 className={styles.featured_books_title}>Featured Books</h2>
         <div className={styles.featured_books_tab}>
           {tabs.map((tab) => (
             <button
-              id={tab.id}
+              key={tab.id}
               className={styles.featured_books_tabBtn}
               onClick={() => changeBtnTabHandler(tab)}
               style={{
-                backgroundColor: tab.id === clicked ? "#e3e388" : "",
+                backgroundColor: tab.id === clicked ? "#eb6e6e" : "",
                 color: tab.id === clicked ? "#fff" : "",
               }}
             >
@@ -90,11 +99,16 @@ function HomePageContent(props) {
           </span>
         </div>
       </div>
-      <div className={styles.fiction_books_homepage_wrap}>
+      <div className={styles.featured_books_wrap}>
         <h2 className={styles.featured_books_title}>Collections</h2>
         <CollectionGrid />
       </div>
+      <div className={styles.featured_books_wrap}>
+        <h2 className={styles.featured_books_title}>Articles</h2>
+        <ArticlePost articles={articles}/>
+      </div>
     </>
+   
   );
 }
 

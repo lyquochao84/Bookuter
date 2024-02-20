@@ -1,0 +1,52 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .about_us {
+        display: flex;
+        margin: 100px 0;
+        align-items: center;
+    }
+    
+    .about_us_image {
+        margin-right: 300px;
+        height: 600px;
+    }
+    
+    .about_us_paragraph {
+        line-height: 30px;
+        color: var(--text-color);
+    }
+    
+    .about_us_title {
+        font-size: 36px;
+    }
+    
+    .about_us_text {
+        text-align: justify;
+    }
+}
+
+/* Laptop Screens */
+@media (min-width: 64em) and (max-width: 100em) {
+    .about_us {
+        display: flex;
+        margin: 100px 0;
+        align-items: center;
+    }
+    
+    .about_us_image {
+        margin-right: 200px;
+    }
+    
+    .about_us_paragraph {
+        line-height: 30px;
+        color: var(--text-color);
+    }
+    
+    .about_us_title {
+        font-size: 36px;
+    }
+    
+    .about_us_text {
+        text-align: justify;
+    }
+}

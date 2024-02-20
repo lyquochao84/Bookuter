@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 function BooksItem(props) {
-    const { genre, title, language, price } = props.book;
+    const { id, genre, title, language, price } = props.book;
 
     const imagePath = `/img/books/${genre}/${title}.jpg`;
-    const linkPath = `/books/${title}`;
+    const linkPath = `/books/${id}`;
 
     return (
         <li className={styles.books_item}>

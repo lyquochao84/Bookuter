@@ -1,0 +1,23 @@
+/* Large Screen */
+@media (min-width: 100em) {
+    .favorite_list_wrap {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0;
+        justify-content: space-around;
+    }
+}
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+    .favorite_list_wrap {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        overflow-x: auto;
+        padding: 0;
+        justify-content: space-around;
+    }
+}

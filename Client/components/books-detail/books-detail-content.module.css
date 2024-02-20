@@ -1,0 +1,271 @@
+/* Large Devices */
+@media (min-width: 100em) {
+  .book_detail_info_wrap {
+    /* margin-left: 40px; */
+  }
+
+  .book_detail_title {
+    font-size: 28px;
+    font-weight: 700;
+    /* line-height: 5px; */
+  }
+
+  .book_detail_price,
+  .book_detail_author {
+    font-size: 18px;
+  }
+
+  .book_detail_description_wrap {
+    margin: 30px 0;
+  }
+
+  .book_detail_description_icon {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .book_detail_description_text {
+    font-size: 22px;
+  }
+
+  .book_detail_description_text:hover {
+    cursor: pointer;
+  }
+
+  .book_detail_description {
+    line-height: 26px;
+    text-align: justify;
+  }
+
+  .book_detail_more_info,
+  .book_detail_publisher,
+  .book_detail_publication_date,
+  .book_detail_language,
+  .book_detail_page_count,
+  .book_detail_genre {
+    font-size: 17px;
+  }
+
+  .lowStock {
+    color: red;
+  }
+
+  .inStock {
+    color: green;
+  }
+
+  .bold_text {
+    font-weight: 550;
+  }
+
+  .additional_feature_wrap {
+    display: flex;
+  }
+
+  .register_now_wrap {
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+
+  .register_now {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  .register_now:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+  }
+
+  .save_to_fav_icon {
+    margin-top: 4px;
+    margin-left: 210px;
+    font-size: 22px;
+  }
+
+  .save_to_fav_icon:hover {
+    cursor: pointer;
+    color: var(--theme-color);
+  }
+
+  .share_on_text_line {
+    position: relative;
+    width: 312px;
+    margin: 30px 0 10px 0;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 450;
+  }
+
+  .share_on_text_line:before {
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background: var(--theme-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  .share_on_text_line:after {
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background: var(--theme-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .share_on_icon_wrap {
+    margin-left: 105px;
+  }
+  
+  .share_on_icon {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #303030;
+  }
+
+  .share_on_icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+  .book_detail_title {
+    font-size: 28px;
+    font-weight: 700;
+    /* line-height: 5px; */
+  }
+
+  .book_detail_price,
+  .book_detail_author {
+    font-size: 18px;
+  }
+
+  .book_detail_description_wrap {
+    margin: 30px 0;
+  }
+
+  .book_detail_description_icon {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .book_detail_description_text {
+    font-size: 22px;
+  }
+
+  .book_detail_description_text:hover {
+    cursor: pointer;
+  }
+
+  .book_detail_description {
+    line-height: 26px;
+    text-align: justify;
+  }
+
+  .book_detail_more_info,
+  .book_detail_publisher,
+  .book_detail_publication_date,
+  .book_detail_language,
+  .book_detail_page_count,
+  .book_detail_genre {
+    font-size: 17px;
+  }
+
+  .lowStock {
+    color: red;
+  }
+
+  .inStock {
+    color: green;
+  }
+
+  .bold_text {
+    font-weight: 550;
+  }
+
+  .additional_feature_wrap {
+    display: flex;
+  }
+
+  .register_now_wrap {
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+
+  .register_now {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  .register_now:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+  }
+
+  .save_to_fav_icon {
+    margin-top: 4px;
+    margin-left: 210px;
+    font-size: 22px;
+  }
+
+  .save_to_fav_icon:hover {
+    cursor: pointer;
+    color: var(--theme-color);
+  }
+
+  .share_on_text_line {
+    position: relative;
+    width: 312px;
+    margin: 30px 0 10px 0;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 450;
+  }
+
+  .share_on_text_line:before {
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background: var(--theme-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  .share_on_text_line:after {
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background: var(--theme-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .share_on_icon_wrap {
+    margin-left: 105px;
+  }
+  
+  .share_on_icon {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #303030;
+  }
+
+  .share_on_icon:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,66 @@
+/* Large Devices */
+@media (min-width: 100em) {
+    .search_result_link {
+        text-decoration: none;
+    }
+
+    .search_result {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    
+    .search_result:hover {
+        cursor: pointer;
+        background-color: beige;
+        transition: 0.1s all ease-in-out;
+    }
+
+    .search_result_image {
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 80px;
+        height: 100%;   
+    }
+
+    .search_result_title,
+    .search_result_price {
+        color: var(--text-color);
+        margin-right: 10px;
+    }
+}
+
+/* Laptop Screen */
+@media (min-width: 64em) and (max-width: 100em) {
+    .search_result_link {
+        text-decoration: none;
+    }
+
+    .search_result {
+        display: flex;
+        margin-bottom: 20px;
+        padding-right: 50px;
+    }
+    
+    .search_result:hover {
+        cursor: pointer;
+        background-color: beige;
+        transition: 0.1s all ease-in-out;
+    }
+
+    .search_result_image {
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 80px;
+        height: 100%;   
+    }
+
+    .search_result_title {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .search_result_title,
+    .search_result_price {
+        color: var(--text-color);
+    }
+}
