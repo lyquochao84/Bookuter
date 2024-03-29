@@ -96,7 +96,7 @@ class AuthController {
             }
           );
         } 
-         else {
+        else {
           // Password don't match
           return res.status(401).json({ message: "Invalid password" });
         }
@@ -124,7 +124,6 @@ class AuthController {
       }
       res.json(user);
     });
-
   }
 
   logOut(req, res) {

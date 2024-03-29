@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthUserContext } from "@/context/userContext";
-import styles from './favorite-list.module.css';
+import styles from "./favorite-list.module.css";
 import FavoriteListItem from "@/components/favorite-list-item";
 
 function FavoriteList() {
@@ -23,11 +23,14 @@ function FavoriteList() {
   }, [user, setUser]);
 
   return (
-    <ul className={styles.favorite_list_wrap}>
-      {items.map((book) => (
-        <FavoriteListItem book={book} />
-      ))}
-    </ul>
+    <>
+      <h2 className={styles.list_title}>Favorite List</h2>
+      <ul className={styles.favorite_list_wrap}>
+        {items.map((book) => (
+          <FavoriteListItem book={book} />
+        ))}
+      </ul>
+    </>
   );
 }
 

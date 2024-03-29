@@ -9,6 +9,7 @@ import SearchResultsList from "./Search/SearchResultsList";
 
 import { useState } from "react";
 import { useContext } from "react";
+import { useRouter } from "next/router";
 import { AuthUserContext } from "@/context/userContext";
 
 const navigation = [
@@ -24,6 +25,7 @@ const navigation = [
 ];
 
 function NavigationBar() {
+  const router = useRouter();
   // Seach Part
   const [results, setResults] = useState([]);
   const [input, setInput] = useState("");
@@ -35,6 +37,10 @@ function NavigationBar() {
   const logoutButtonHandler = async () => {
     await logoutHandler();
   };
+
+  const handleChangePage = () => {
+    router.push('/favorite-list').then(() => router.reload());
+  }
 
   return (
     <nav className={styles.navigation}>
@@ -102,7 +108,7 @@ function NavigationBar() {
               <span className={styles.navigation_item_link}>{user.name}</span>
               <ul className={styles.user_options_list}>
                 <li className={styles.user_options}>
-                  <Link href="/favorite-list">My List</Link>
+                  <span onClick={handleChangePage}>My List</span>
                 </li>
                 <li className={styles.user_options}>
                   <span onClick={logoutButtonHandler}>Log Out</span>

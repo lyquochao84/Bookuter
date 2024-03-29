@@ -43,7 +43,7 @@ function BooksDetailContent({
   const { user } = useContext(AuthUserContext);
   const [changeFavBtnColor, setChangeFavBtnColor] = useState(() => {
     if (typeof window !== "undefined") {
-      const storedColor = localStorage.getItem(`book_${user_id}_${id}_fav_color`);
+      const storedColor = localStorage.getItem(`book_${id}_fav_color`);
       return storedColor ? JSON.parse(storedColor) : false;
     }
   });
@@ -65,7 +65,7 @@ function BooksDetailContent({
   function changeFavColorBtn() {
     setChangeFavBtnColor(!changeFavBtnColor);
     localStorage.setItem(
-      `book_${user_id}_${id}_fav_color`,
+      `book_${id}_fav_color`,
       JSON.stringify(!changeFavBtnColor)
     );
   }
@@ -75,9 +75,8 @@ function BooksDetailContent({
     e.preventDefault();
 
     if (user) {
-      const response = await saveBook(user_id, id, title, language, price, genre);
+      const response = await saveBook(id, title, language, price, genre);
       alert(response.message);
-      console.log(user_id);
 
       // Toggle the state or update the UI based on the response
       if (response.message.includes("Book removed from favorites")) {
@@ -89,7 +88,7 @@ function BooksDetailContent({
       }
     } 
     else {
-      alert("Please sign in to use this feature");
+      alert("Please sign in to use this featujre");
     }
   };
 
@@ -108,7 +107,8 @@ function BooksDetailContent({
     e.preventDefault();
 
     if (user) {
-    } else {
+    } 
+    else {
       alert("Please sign in to use this feature");
     }
   };

@@ -3,7 +3,7 @@ const mysql = require('mysql');
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'password',
     database: 'bookuter',
 });
 
@@ -12,7 +12,7 @@ db.connect((err) => {
         console.log('Connected Sucessfully');
     }
     else {
-        console.log('Connected Failed');
+        console.log('Connected Failed', err.message);
     }
 });
 

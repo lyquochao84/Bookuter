@@ -40,7 +40,8 @@ function SignInPage() {
       const result = await logUserIn(enteredEmail, enteredPassword);
       setMessage(result.message);
       setIsLoggedIn(true);
-    } catch (error) {
+    } 
+    catch (error) {
       console.error("Sign in error:", error.message);
       setMessage(error.message);
       setIsLoggedIn(false);

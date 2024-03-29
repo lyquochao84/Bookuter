@@ -30,7 +30,8 @@ class UserController {
         const favoriteBooks = req.session.userFavorites[name] || [];
         res.json({ favoriteBooks });
       });
-    } else {
+    } 
+    else {
       res.status(401).json({ message: "Unauthorized User" });
     }
   }
