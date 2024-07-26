@@ -1,0 +1,14 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore environment variables file
+.env
+
+# Ignore Database
+Database/
+
+# Ignore Client/Node_Modules
+Client/node_modules
+
+# Ignore Server/Node_Modules
+Server/node_modules
